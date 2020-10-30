@@ -24,7 +24,8 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Inter", sans-serif;font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
 }
 
 /*--------------------------------------------------------------
@@ -185,10 +186,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   cursor: pointer;
   text-align: right;
+  transition: 0.2s;
 }
 
 .mobile-nav-toggle i {
-  color: #149ddd;
+  color: #ffffff;
+  transition: 0.2s;
 }
 
 .mobile-nav-active {
@@ -201,6 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
+  transition: 0.2s;
 }
 
 /*--------------------------------------------------------------
@@ -233,7 +237,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   font-size: 64px;
-  font-weight: 600;
   line-height: 56px;
   color: #ffffff;
 }
@@ -271,9 +274,6 @@ h1, h2, h3, h4, h5, h6 {
   #hero .hero-container{
     margin-left: 5%;
   }
-  #hero p{
-    font-size: 20px;
-  }
   #hero h1 {
     font-size: 36px;
     line-height: 36px;
@@ -283,7 +283,11 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+  #hero p{
+    font-size: 18px;
+  }
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
