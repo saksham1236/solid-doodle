@@ -24,8 +24,8 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: normal;
 }
 
 /*--------------------------------------------------------------
@@ -38,8 +38,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   border-radius: 50px;
   right: 15px;
-  bottom: 15px;
-  background: #149ddd;
+  bottom: 20px;
+  background: #3A00FF;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #2eafec;
+  background: #00FFE0;
   transition: background 0.2s ease-in-out;
 }
 
@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9998;
   border: 0;
   background: none;
-  font-size: 24px;
+  font-size: 36px;
   transition: all 0.4s;
   outline: none !important;
   line-height: 1;
@@ -212,13 +212,13 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("") top center;
+  background-color: #000000;
   background-size: cover;
 }
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: #000000;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -247,9 +247,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero p span {
-  color: #fff;
+  color: #ffffff;
   padding-bottom: 4px;
-  border-bottom: 3px solid #8000ff;
+  border-bottom: 3px solid #3A00ff;
+  transition: 0.2s;
 }
 @media (min-width: 1199px){
   #hero .hero-container {
@@ -1075,7 +1076,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: #000000;
 }
 
 #footer .copyright {
