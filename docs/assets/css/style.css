@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #6f7180;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu .active > a {
   text-decoration: none;
   background-color: #ffffff;
 	border-bottom: solid;
@@ -185,8 +185,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   padding-left: 30px;
 }
-.nav-menu .active > a{
-  text-align: left;
+.nav-menu a:hover, .nav-menu li:hover > a {
+  border-bottom: solid;
+	border-color: white;
+  color: #fff;
+  padding-left: 30px;
+}
+.nav-menu .active:hover > a {
+  text-decoration: none;
+  background-color: #2A00FF;
+  padding-left: 30px;
+  color: #fff;
 }
 
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
