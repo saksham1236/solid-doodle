@@ -71,15 +71,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
-  padding: 0 15px;
+  padding-left: 30px;
   background: #000000;
   overflow-y: auto;
 }
-@media (min-width: 1199px){
-  #header{
-      background: #2A00FF;
-  }
-}
+
 #header .profile{
   text-align: left;
 
@@ -99,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile .social-links a {
-  font-size: 18px;
+  font-size: 24px;
   display: inline-block;
   background: #000000;
   color: #ffffff;
@@ -108,13 +104,23 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   transition: 0.3s;
 }
+@media (min-width: 1199px){
+  #header{
+      background: #2A00FF;
+  }
+  #header .profile .social-links a {
+
+    background: #2A00FF;
+  }
+}
+
 
 #header .profile .social-links a:hover {
-  background: #9900ff;
+  background: #fb8800;
   color: #fff;
   text-decoration: none;
   scale:1.3;
@@ -159,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lexend Deca", sans-serif;
   display: flex;
   color: #a8a9b4;
-  padding-top: 8px;
+  padding-top: 4px;
   padding-bottom: 4px;
   transition: 0.3s;
   font-size: 36px;
@@ -167,6 +173,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width:768px) {
   .nav-menu a{
     font-size:24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
 }
