@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   transition: display 0.3s ease-in-out;
   z-index: 99999;
-  filter: drop-shadow(5px 5px 8px #000000);
+  filter: drop-shadow(5px 5px 8px hsla(0, 0%, 0%, 0.5));
 }
 
 .back-to-top i {
