@@ -188,10 +188,6 @@
   }
   $(window).on('load', function() {
     aos_init();
-  });
-
-  $("#a").hover(function(){
-    $(".cursor").css({"background-color": "#ffffff", "border":"0px"});
-  });
+  })
 
 })(jQuery);
