@@ -11,14 +11,13 @@
 body {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-  font-family: "Hind", sans-serif;
+  font-family: "HKGroteskRegular", sans-serif;
   color: #FFFFFF;
   background-color: #000000;
 }
 
 a {
   color: #149ddd;
-  cursor: none;
 }
 
 a:hover {
@@ -28,7 +27,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lexend Deca", sans-serif;
-  font-weight: Normal;
+  font-weight: Normal !important;
 }
 
 /*--------------------------------------------------------------
@@ -257,7 +256,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: #2A00FF;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1140,7 +1138,7 @@ section {
     position: static;
     width: auto;
     padding-right: 20px 15px;
-    background: #2A00FF;
+    background: #000000;
   }
 }
 }
