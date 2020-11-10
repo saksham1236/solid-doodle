@@ -13,7 +13,7 @@ body {
   -moz-osx-font-smoothing: auto;
   font-family: "HKGroteskRegular", sans-serif;
   color: #FFFFFF;
-  background-color: #000000;
+  background-color: #2A00FF;
 }
 
 a {
@@ -28,6 +28,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lexend Deca", sans-serif;
   font-weight: Normal !important;
+  color: #fff !important;
 }
 
 /*--------------------------------------------------------------
@@ -342,7 +343,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: #2A00FF;
 }
 
 .section-title {
@@ -351,11 +352,9 @@ section {
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
 }
 
 .section-title h2::after {
