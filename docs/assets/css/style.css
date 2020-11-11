@@ -33,6 +33,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 48px;
 }
+@media(max-width:768px){
+  h1{
+    font-size: 36px;
+  }
+  h2{
+    font-size: 24px;
+  }
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -429,6 +437,20 @@ section {
   height:300px;
   width:100%;
   object-fit: cover;
+}
+@media (max-width:1024px) {
+  .itemsd .workcont{
+    height:350px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url('../img/profile-img.jpg');
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .itemsd .img-fluid{
+    display: none;
+  }
+  .itemsd:hover{
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
 
 /*--------------------------------------------------------------
