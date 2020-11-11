@@ -30,7 +30,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: Normal !important;
   color: #fff !important;
 }
-
+h1 {
+  font-size: 48px;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -126,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #00b2ff;
   color: #fff;
   text-decoration: none;
-  scale:1.3;
+  -webkit-transform:scale(1.3);
 }
 
 #main {
@@ -398,6 +400,35 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+@media(max-width:1024px){
+  .imageshow{
+    margin-top: 10px;
+  }
+}
+.itemsd {
+  padding: 20px 0px 20px 0px;
+  border-style: solid;
+  border-top-width: thin;
+  border-bottom-width: thin;
+  border-left-width: 0;
+  border-right: 0px;
+  border-color: white;
+  transition: 0.4s;
+  margin-top: -1px;
+}
+
+.itemsd:hover {
+  background-color: black;
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+  -webkit-transform:scale(1.02);
+}
+
+.itemsd .img-fluid{
+  height:300px;
+  width:100%;
+  object-fit: cover;
 }
 
 /*--------------------------------------------------------------
