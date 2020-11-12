@@ -55,7 +55,7 @@ h1 {
   background: #2A00FF;
   color: #fff;
   transition: display 0.3s ease-in-out;
-  z-index: 99999;
+  z-index: 100;
   filter: drop-shadow(5px 5px 8px hsla(0, 0%, 0%, 0.5));
 }
 
@@ -82,7 +82,7 @@ h1 {
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;
-  z-index: 9997;
+  z-index: 97;
   transition: all 0.5s;
   padding-left: 30px;
   background: #000000;
@@ -226,7 +226,7 @@ h1 {
   position: fixed;
   right: 15px;
   top: 15px;
-  z-index: 9998;
+  z-index: 98;
   border: 0;
   background: none;
   font-size: 36px;
@@ -1209,7 +1209,7 @@ section {
   left: 0;
   bottom: 0;
   width: 300px;
-  z-index: 9999;
+  z-index: 99;
   background: #2A00FF;;
 }
 
