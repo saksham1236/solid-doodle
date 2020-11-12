@@ -133,8 +133,8 @@ h1 {
 
 
 #header .profile .social-links a:hover {
-  background: #00b2ff;
-  color: #fff;
+  background: #fff;
+  color: #000;
   text-decoration: none;
   -webkit-transform:scale(1.3);
 }
@@ -421,26 +421,26 @@ section {
   border-bottom-width: thin;
   border-left-width: 0;
   border-right: 0px;
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.5);
   transition: 0.4s;
   margin-top: -1px;
 }
 .itemsd .col-lg-6{
   height:350px;
 }
+.item .workcont{
+  border-radius: 20px;
+}
 .itemsd:hover {
   background-color: white;
-  -webkit-transform:scale(1.02);
 }
 
 
 @media(min-width:1024px){
   .itemsd:hover {
-
     color: black;
     transition: 0.4s;
     transition-timing-function: ease-in-out;
-    -webkit-transform: scale(1.02);
     position: relative;
     transition: 0.4s;
   }
@@ -465,6 +465,9 @@ section {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url('../img/profile-img.jpg');
     margin-left: 20px;
     margin-right: 20px;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
   }
 
   .itemsd h2, p{
@@ -474,10 +477,23 @@ section {
     background: #2A00FF;
   }
   .itemsd:hover{
-    background: #2A00FF;;
+    background: #2A00FF;
+  }
+  .itemsd:hover .workcont{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+    transition: 0.4s;
+    transition-delay: 0s;
+    -webkit-transform: scale(1.02);
   }
   .itemsd .imageshow{
     display: none;
+  }
+}
+
+@media (min-width:1024px) {
+  .itemsd:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+    -webkit-transform: scale(1.02);
   }
 }
 
