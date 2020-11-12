@@ -28,7 +28,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lexend Deca", sans-serif;
   font-weight: Normal !important;
-  color: #fff !important;
+  color: #fff;
 }
 h1 {
   font-size: 48px;
@@ -428,13 +428,30 @@ section {
 .itemsd .col-lg-6{
   height:350px;
 }
-
 .itemsd:hover {
-  background-color: black;
-  transition: 0.4s;
-  transition-timing-function: ease-in-out;
+  background-color: white;
   -webkit-transform:scale(1.02);
 }
+
+
+@media(min-width:1024px){
+  .itemsd:hover {
+
+    color: black;
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+    -webkit-transform: scale(1.02);
+    position: relative;
+    transition: 0.4s;
+  }
+  .itemsd:hover h2{
+    color: black;
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+
 
 .itemsd .workcont .img-fluid{
   width: 100%;
@@ -442,17 +459,16 @@ section {
   object-fit: cover;
 }
 
-.itemsd .workcont .blo{
-  display: table-cell;
-  vertical-align: bottom;
-}
-
 @media (max-width:1024px) {
   .itemsd .workcont{
     height:350px;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url('../img/profile-img.jpg');
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .itemsd h2, p{
+    padding-left: 10px;
   }
   .itemsd{
     background: #2A00FF;
