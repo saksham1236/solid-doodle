@@ -435,13 +435,18 @@ section {
   width: 100%
 }
 .itemsd .col-lg-6 .Bugg i{
-  font-size: 24px;
+  font-size: 20px;
   position: relative;
-  bottom: -5px;
-  left: -5px;
+  bottom: -3.5px;
 }
 .itemsd:hover {
   background-color: white;
+}
+.itemsd a{
+  border-bottom: solid 1px white;
+}
+.itemsd h2, p{
+  padding-left: 10px;
 }
 
 
