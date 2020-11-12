@@ -590,13 +590,12 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
   position: relative;
 }
 
@@ -604,15 +603,12 @@ section {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
+  text-transform: capitalize;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -639,8 +635,7 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
+  background: rgb(255, 255, 255);
 }
 
 /*--------------------------------------------------------------
