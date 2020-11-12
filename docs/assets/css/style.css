@@ -424,6 +424,7 @@ section {
   border-color: rgba(255, 255, 255, 0.5);
   transition: 0.4s;
   margin-top: -1px;
+  background: #2A00FF;
 }
 .itemsd .col-lg-6{
   height:350px;
@@ -490,12 +491,6 @@ section {
   .itemsd .col-lg-6 .Bugg{
     position: absolute;
     bottom: 40px;
-  }
-  .itemsd{
-    background: #2A00FF;
-  }
-  .itemsd:hover{
-    background: #2A00FF;
   }
   .itemsd:hover .workcont{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
