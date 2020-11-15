@@ -385,6 +385,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -424,7 +425,7 @@ section {
 }
 .itemsd .col-lg-6{
   height:350px;
-  postion:relative;
+  position:relative;
 }
 .itemsd .col-lg-6 .Bugg{
   position: absolute;
@@ -494,7 +495,7 @@ section {
   }
   .itemsd .col-lg-6 .Bugg{
     position: absolute;
-    bottom: 40px;
+    bottom: 45px;
   }
   .itemsd:hover .workcont{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
@@ -504,6 +505,7 @@ section {
   }
   .itemsd .imageshow{
     display: none;
+    margin-top: 10px;
   }
 }
 
