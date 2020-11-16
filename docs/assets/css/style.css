@@ -1082,22 +1082,44 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 20px 0;
-  background: #f9f9f9;
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
-
+@media(min-width: 768px){
+  .breadcrumbs {
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+}
 .breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 300;
+  font-size: 36px;
+}
+@media(max-width:768px){
+  .breadcrumbs h2 {
+    font-size: 24px;
+  }
 }
 
 .breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
+  font-family: "Lexend Deca", sans-serif;
+  display: inline-flex;
+  flex-wrap: wrap-reverse;
+  padding-left: 0px;
+  margin-left: 0px;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 15px;
+  font-size: 20px;
+}
+
+.breadcrumbs ol a{
+  color: #a8a9b4;
+  transition: 0.3s;
+}
+
+.breadcrumbs ol a:hover{
+  border-bottom: solid 2px;
+  transition: 0.3s;
+  margin-right: 10px;
+  color: #fff;
 }
 
 .breadcrumbs ol li + li {
@@ -1107,7 +1129,7 @@ section {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #0e2442;
+  color: #ffffff;
   content: "/";
 }
 
@@ -1146,19 +1168,22 @@ section {
 
 .portfolio-details .portfolio-details-carousel .owl-dot {
   display: inline-block;
+  float: right;
   margin: 0 10px 0 0;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ddd !important;
+  background-color: #a8a9b4 !important;
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #149ddd !important;
+  background-color: #ffffff !important;
 }
 
 .portfolio-details .portfolio-info {
   padding: 30px;
+  color: #000;
+  border-radius: 15px 0px 15px 15px;
   position: absolute;
   right: 0;
   bottom: -70px;
@@ -1168,11 +1193,18 @@ section {
 }
 
 .portfolio-details .portfolio-info h3 {
+  color:black;
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
+}
+
+@media (max-width:768px) {
+  .portfolio-details .portfolio-info {
+    border-radius: 15px 15px 15px 15px;
+  }
 }
 
 .portfolio-details .portfolio-info ul {
@@ -1208,6 +1240,10 @@ section {
     position: static;
     margin-top: 30px;
   }
+}
+
+.img-fluid{
+  border-radius: 15px;
 }
 
 /*--------------------------------------------------------------

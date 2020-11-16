@@ -35,7 +35,7 @@
   ======================================================== -->
 </head>
 
-<body data-barba="wrapper">
+<body>
 
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class='bx bx-menu-alt-left' ></i></button>
@@ -87,7 +87,7 @@
           <h1>Work</h1>
         </div>
 
-        <div class="row itemsd">
+        <div class="row itemsd" onclick="location.href='portfolio-details.html';" style="cursor: pointer;">
           <div class="workcont col-lg-12 pt-4 pt-lg-0 content rounded" data-aos="fade">
             <div class="row workit">
               <div class="col-lg-6">
@@ -95,11 +95,11 @@
                 <div class = "row Bugg">
                   <div class = "col">
                     <p class="faa-passing animated-hover"><a>View Project <i class='bx bx-right-arrow-alt'></i></a></p>
-                </div>
+                  </div>
                 </div>
               </div>
               <div class="imageshow col-lg-6" data-aos="fade">
-                  <img src="assets/img/profile-img.jpg" class="img-fluid rounded" alt="">
+              <img src="assets/img/profile-img.jpg" class="img-fluid rounded" alt="">
               </div>
             </div>
           </div>
@@ -659,7 +659,20 @@
   <script src="assets/js/main.js"></script>
   <script>
   barba.init({
-    // ...
+    transitions: [{
+    name: 'opacity-transition',
+    leave(data) {
+      return gsap.to(data.current.container, {
+        opacity: 0
+      });
+    },
+    enter(data) {
+      return gsap.from(data.next.container, {
+        opacity: 0
+      });
+    }
+  }]
+
   })
   const cursor = document.querySelector('.cursor');
 
