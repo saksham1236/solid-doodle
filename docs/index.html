@@ -16,6 +16,7 @@
   <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hk-grotesk" type="text/css"/>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/corey-sans" type="text/css"/>
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -37,11 +38,57 @@
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class='bx bx-menu-alt-left' ></i></button>
+  <a href="#cd-nav" class="cd-nav-trigger">Menu 
+    <span class="cd-nav-icon"></span>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
+    <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+        <circle fill="transparent" stroke="#90D4C5" stroke-width="2" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+    </svg>
+</a>
+    
+<div id="cd-nav" class="cd-nav">
+    <div class="cd-navigation-wrapper">
+        <div class="cd-half-block">
+
+
+            <nav class= "nav-menu">
+                <ul class="cd-primary-nav">
+                    <!-- <li><a href="index.html" class="selected">Showcase</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Contact</a></li> -->
+                    <li class="active"><a href="index.html"><span>Home</span></a></li>
+                    <li><a href="#about"><span></span>Work</span></a></li>
+                    <li><a href="#resume"><span>Resume</span></a></li>
+                   <li><a href="#portfolio">Portfolio</a></li>
+                   <li><a href="#services">Services</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div><!-- .cd-half-block -->
+        
+        <div class="cd-half-block">
+            <address>
+                <ul class="cd-contact-info">
+                    <li><a href="mailto:info@myemail.co">info@myemail.co</a></li>
+                    <li>0244-12345678</li>
+                </ul>
+                <ul class="cd-contact-socials">
+                    <li><a href="#0">Instagram</a></li>   
+                    <li><a href="#0">Behance</a></li>   
+                    <li><a href="#0">Dribbble</a></li>    
+                </ul>
+            </address>
+        </div> <!-- .cd-half-block -->
+    </div> <!-- .cd-navigation-wrapper -->
+</div> <!-- .cd-nav -->
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class='bx bx-menu-alt-left'></i></button> -->
+
+  <!-- ======= Header =======  
+  <header id="header"> 
     <div class="d-flex flex-column align-items-left">
 
       <div class="profile">
@@ -64,11 +111,10 @@
           <li><a href="#contact">Contact</a></li>
 
         </ul>
-      </nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class='bx bx-menu-alt-left' ></i></button>
+      </nav>
 
     </div>
-  </header><!-- End Header -->
+  </header>End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-left">
