@@ -161,12 +161,11 @@ h1 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
+  margin-top: 90px;
   padding-top: 30px;
 }
 
 .nav-menu * {
-  margin: 0;
-  
   list-style: none;
 }
 
@@ -184,24 +183,34 @@ h1 {
   padding-bottom: 15px;
   background-size: 0%;
   transition: 0.3s;
-  transition: ;
   font-size: 36px;
+}
+@media(max-width:768px){
+  .nav-menu a{
+    font-size: 24px !important;
+  }
+}
+
+@media(max-height:768px){
+  .nav-menu a{
+    font-size: 24px !important;
+  }
 }
 .nav-menu a:before {
   content: "";
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 10px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: #00FFD3;
   visibility: hidden;
   width: 0px;
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out;
 }
 .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
   visibility: visible;
-  width: 25px;
+  width: 100px;
 }
 
 .nav-menu .active > a {
@@ -1438,9 +1447,9 @@ section {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.753);
   visibility: hidden;
-  -webkit-transition: visibility 0s 0.7s;
-  -moz-transition: visibility 0s 0.7s;
-  transition: visibility 0s 0.7s;
+  -webkit-transition: visibility 0.5s 0.7s;
+  -moz-transition: visibility 0.5s 0.7s;
+  transition: visibility 0.5s 0.7s;
 }
 
 .cd-nav .cd-navigation-wrapper {
@@ -1472,9 +1481,9 @@ section {
 }
 .navigation-is-open .cd-nav {
   visibility: visible;
-  -webkit-transition: visibility 0s 0s;
-  -moz-transition: visibility 0s 0s;
-  transition: visibility 0s 0s;
+  -webkit-transition: visibility 0.5s 0s;
+  -moz-transition: visibility 0.5s 0s;
+  transition: visibility 0.5s 0s;
 }
 .navigation-is-open .cd-nav .cd-navigation-wrapper {
   -webkit-transform: translateX(0);
@@ -1491,7 +1500,7 @@ section {
 }
 
 .cd-nav .cd-primary-nav {
-  margin-top: 90px;
+  margin-top: 0px;
 }
 .cd-nav .cd-primary-nav a {
   font-size: 36px;
@@ -1717,8 +1726,7 @@ display: inline-block;
 user-select: none;
 /* use padding and font-size to change buttons size */
 padding: .6em .8em;
-font-size: 18p
-x;
+font-size: 18px;
 
 }
 .cd-pagination a {
