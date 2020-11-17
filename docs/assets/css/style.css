@@ -216,11 +216,14 @@ object {
 }
 @media(max-width:768px){
   .nav-menu a{
-    font-size: 24px !important;
+    font-size: 30px !important;
   }
 }
 
 @media(max-height:768px){
+  .nav-menu {
+    margin-top: 10%;
+  }
   .nav-menu a{
     font-size: 24px !important;
   }
@@ -503,7 +506,7 @@ section {
   .itemsd:hover {
     background-color: white;
     color: black;
-    transition: 0.4s;
+    transition: all 0.4s;
     transition-timing-function: ease-in-out;
     position: relative;
     transition: 0.4s;
@@ -536,7 +539,7 @@ section {
     background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url('../img/profile-img.jpg');
     margin-left: 20px;
     margin-right: 20px;
-    transition: 0.2s;
+    transition: all 0.2s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
   }
@@ -550,9 +553,9 @@ section {
   }
   .itemsd:hover .workcont{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
-    transition: 0.4s;
+    transition: all 0.4s;
     transition-delay: 0s;
-    -webkit-transform: scale(1.02);
+
   }
   .itemsd .imageshow{
     display: none;
@@ -1475,11 +1478,16 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.753);
+  background-color: rgb(0, 0, 0);
   visibility: hidden;
-  -webkit-transition: visibility 0.5s 0.7s;
-  -moz-transition: visibility 0.5s 0.7s;
-  transition: visibility 0.5s 0.7s;
+  opacity: 0;
+  transition-delay: 100ms;
+  -webkit-transition: visibility 0.5s 0.7s, opacity 0.5s;
+  -moz-transition: visibility 0.5s 0.7s, opacity 0.5s;
+  transition: visibility 0.5s 0.7s, opacity 0.5s;
+}
+.cd-half-block {
+  margin-left: 100px;
 }
 
 .cd-nav .cd-navigation-wrapper {
@@ -1511,9 +1519,11 @@ section {
 }
 .navigation-is-open .cd-nav {
   visibility: visible;
-  -webkit-transition: visibility 0.5s 0s;
-  -moz-transition: visibility 0.5s 0s;
-  transition: visibility 0.5s 0s;
+  opacity: 1;
+  transition-delay: 100ms;
+  -webkit-transition: visibility 0.5s 0s, opacity 0.5s;
+  -moz-transition: visibility 0.5s 0s, opacity 0.5s;
+  transition: visibility 0.5s 0s, opacity 0.5s;
 }
 .navigation-is-open .cd-nav .cd-navigation-wrapper {
   -webkit-transform: translateX(0);
