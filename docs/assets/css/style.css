@@ -1489,6 +1489,11 @@ section {
 .cd-half-block {
   margin-left: 100px;
 }
+@media(max-width:768px){
+  .cd-half-block {
+    margin-left: 40px;
+  }
+}
 
 .cd-nav .cd-navigation-wrapper {
   /* all navigation content */
