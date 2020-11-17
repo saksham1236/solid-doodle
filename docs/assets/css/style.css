@@ -166,7 +166,7 @@ h1 {
 
 .nav-menu * {
   margin: 0;
-  padding-left: 30px;
+  
   list-style: none;
 }
 
@@ -180,39 +180,41 @@ h1 {
   font-family: "Lexend Deca", sans-serif;
   display: flex;
   color: #a8a9b4;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-size: 0%;
   transition: 0.3s;
+  transition: ;
   font-size: 36px;
 }
-@media (max-width:768px) {
-  .nav-menu a{
-    font-size:24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
+.nav-menu a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #18d26e;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
 }
-
-.nav-menu a i {
-  font-size: 24px;
-  padding-right: 8px;
-  color: #6f7180;
+.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
+  visibility: visible;
+  width: 25px;
 }
 
 .nav-menu .active > a {
   text-decoration: none;
   background-color: #ffffff;
-	border-bottom: solid;
-	border-bottom-color: white;
   color: #000;
   padding-left: 30px;
 }
 .nav-menu a:hover, .nav-menu li:hover > a {
-  border-bottom: solid;
-	border-color: white;
   color: #fff;
   padding-left: 30px;
+  background-size: 100% 0.1em;
+background-position-x: 0%;
 }
 .nav-menu .active:hover > a {
   text-decoration: none;
@@ -1308,6 +1310,7 @@ section {
   -moz-transition: -moz-transform 0.5s;
   transition: transform 0.5s;
 }
+
 .cd-nav-trigger .cd-nav-icon {
   /* icon created in CSS */
   position: absolute;
@@ -1505,6 +1508,7 @@ section {
   margin-bottom: 20px;
 }
 .cd-nav .cd-contact-info li {
+  list-style: none;
   margin-bottom: 0.5em;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.3);
@@ -1527,6 +1531,7 @@ section {
 }
 
 .cd-nav .cd-contact-socials li {
+  list-style: none;
   line-height: 1.8;
 }
 .cd-nav .cd-contact-socials a {
