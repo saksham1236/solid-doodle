@@ -11,7 +11,9 @@
 body {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-  font-family: "HKGroteskRegular", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: Normal;
+  text-rendering: optimizeLegibility;
   color: #FFFFFF;
   background-color: #2A00FF;
 }
@@ -43,6 +45,10 @@ h1 {
 }
 .rounded {
   border-radius: 15px !important;
+}
+
+p {
+  line-height: 1.7em;
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -142,9 +148,6 @@ h1 {
   -webkit-transform:scale(1.3);
 }
 
-#main {
-  margin-left: 300px;
-}
 
 @media (max-width: 1199px) {
   #header {
@@ -433,10 +436,7 @@ section {
 }
 
 .itemsd {
-  padding: 20px 0px 20px 0px;
-  border-style: solid;
-  border-top-width: thin;
-  border-bottom-width: thin;
+  padding: 0px 0px 20px 0px;
   border-left-width: 0;
   border-right: 0px;
   border-color: rgba(255, 255, 255, 0.5);
@@ -458,10 +458,9 @@ section {
   position: relative;
   bottom: -3.5px;
 }
-.itemsd:hover {
-  background-color: white;
-}
+
 .itemsd a{
+  padding-bottom: 2px;
   border-bottom: solid 1px white;
 }
 .itemsd h2, p{
@@ -470,14 +469,20 @@ section {
 
 
 @media(min-width:992px){
+  .itemsd{
+  padding: 20px 0px 20px 0px;
+  border-style: solid;
+  border-top-width: thin;
+  border-bottom-width: thin;
+  }
   .itemsd:hover {
+    background-color: white;
     color: black;
     transition: 0.4s;
     transition-timing-function: ease-in-out;
     position: relative;
     transition: 0.4s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
-    -webkit-transform: scale(1.02);
   }
   .itemsd:hover h2{
     color: black;
