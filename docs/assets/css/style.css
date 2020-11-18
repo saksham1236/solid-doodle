@@ -1977,9 +1977,6 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
 .blog_item h1, .blog_item h5 {
     transition: all 0.5s;
 }
-.blog_item h5 {
-    font-size: 0.7em;
-}
 .blog_item .abs_bg {
     display: block;
     z-index: 1;
