@@ -55,7 +55,10 @@ p {
 object {
   pointer-events:none;
 }
-
+.container {
+  margin-left:0;
+  margin-right: 0;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -407,7 +410,10 @@ section {
 }
 
 .section-title {
+
   padding-bottom: 30px;
+  padding-left: 50px;
+
 }
 
 .section-title h2 {
@@ -432,10 +438,10 @@ section {
   margin-bottom: 0;
 }
 
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -1963,5 +1969,68 @@ transform: translateX(-50%) translateY(-50px);
 transform: translateX(-50%) rotate(180deg) translateY(50px);
 }
 
+.blog_item {
+    padding: 80px 50px;
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: teal;
+    height: 350px;
+}
+.blog_item h1, .blog_item h5 {
+    transition: all 0.5s;
+}
+.blog_item h5 {
+    font-size: 0.7em;
+}
+.blog_item .abs_bg {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: all 0.5s;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+.blog_item .blog_item_inner {
+    z-index: 2;
+    position: relative;
+}
+.blog_item .full_link {
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+.blog_item:hover {
+    color: #fff;
+    background: #000;
+}
+.blog_item:hover h1, .blog_item:hover h5 {
+    color: #fff;
+}
+.blog_item:hover .abs_bg {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+.blog_item h1 {
+    overflow: hidden;
+    width: 100%;
+}
+#blog .blog_item h1 {
+    overflow: hidden;
+}
 
 
