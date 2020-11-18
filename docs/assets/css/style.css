@@ -55,10 +55,6 @@ p {
 object {
   pointer-events:none;
 }
-.container {
-  margin-left:0;
-  margin-right: 0;
-}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -412,7 +408,6 @@ section {
 .section-title {
 
   padding-bottom: 30px;
-  padding-left: 50px;
 
 }
 
@@ -1975,7 +1970,7 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     transition: all 0.5s;
     cursor: pointer;
     background-color: teal;
-    height: 350px;
+    height: 450px;
 }
 .blog_item h1, .blog_item h5 {
     transition: all 0.5s;
