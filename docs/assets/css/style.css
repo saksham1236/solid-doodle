@@ -697,7 +697,7 @@ section {
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -711,7 +711,9 @@ section {
 }
 
 .resume .resume-item h4 {
-  line-height: 18px;
+  position: relative;
+  top:-4px;
+  line-height: 1.5em;
   font-size: 18px;
   font-weight: 600;
   text-transform: capitalize;
@@ -720,7 +722,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  padding: 5px 15px;
+  padding: 5px 0px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
