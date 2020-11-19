@@ -49,11 +49,6 @@
         <div class="cd-half-block">
               <nav class= "nav-menu">
                 <ul class="cd-primary-nav">
-                    <!-- <li><a href="index.html" class="selected">Showcase</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="#">Docs</a></li>
-                    <li><a href="#">Contact</a></li> -->
                     <li class="active"><a href="index.html"><span>Home</span></a></li>
                     <li><a href="#about"><span></span>Work</span></a></li>
                     <li><a href="#resume"><span>Resume</span></a></li>
@@ -95,37 +90,37 @@
         <div class="section-title container">
           <h1>Work</h1>
         </div>
-        <div class="blog_item full grey_bg">
+
+        <div id = "yallo" class="blog_item full grey_bg">
           <a class="full_link" href="portfolio-details.html"></a>
-          <div class="abs_bg" style="background-image: url('assets/img/portfolio-details-1.jpg')"></div>
+          <div class="abs_bg" id = "abs_bg" style="background-image: url('assets/img/portfolio-details-1.jpg')"></div>
           <div class="blog_item_inner container">
               <h1>Young Funds Website Redesign</h1>
               <h5 class="date">Saksham Tandon | March 2018</h5>
           </div>
         </div>
 
-        <div class="blog_item full grey_bg">
+        <div id = "yallo1" class="blog_item full grey_bg">
           <a class="full_link" href="portfolio-details.html"></a>
-          <div class="abs_bg" style="background-image: url('assets/img/portfolio-details-1.jpg')"></div>
+          <div class="abs_bg" id = "abs_bg" style="background-image: url('assets/img/portfolio-details-1.jpg')"></div>
           <div class="blog_item_inner container">
-              <h1>Five Questions to Help Jump-Start Your Minimalist Journey</h1>
-              <h5 class="date">Brenda Vargas | 24 Jul, 2015</h5>
+              <h1>Young Funds Website Redesign</h1>
+              <h5 class="date">Saksham Tandon | March 2018</h5>
           </div>
         </div>
 
-        <div class="blog_item full grey_bg">
+        <div id = "yallo2" class="blog_item full grey_bg">
           <a class="full_link" href="portfolio-details.html"></a>
-          <div class="abs_bg" style="background-image: url('assets/img/portfolio-details-1.jpg')"></div>
+          <div class="abs_bg" id = "abs_bg" style="background-image: url('assets/img/portfolio-details-1.jpg')"></div>
           <div class="blog_item_inner container">
-              <h1>Five Questions to Help Jump-Start Your Minimalist Journey</h1>
-              <h5 class="date">Brenda Vargas | 24 Jul, 2015</h5>
+              <h1>Young Funds Website Redesign</h1>
+              <h5 class="date">Saksham Tandon | March 2018</h5>
           </div>
         </div>
+
+
 
           
-    
-
-
     </section><!-- End About Section -->
 
   <!-- ======= Resume Section ======= -->
@@ -593,32 +588,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
-  barba.init({
-    transitions: [{
-    name: 'opacity-transition',
-    leave(data) {
-      return gsap.to(data.current.container, {
-        opacity: 0
-      });
-    },
-    enter(data) {
-      return gsap.from(data.next.container, {
-        opacity: 0
-      });
-    }
-  }]
-
-  })
-  const cursor = document.querySelector('.cursor');
-
-  document.addEventListener('mousemove', e => {
-      cursor.setAttribute("style", "top: "+(e.pageY - 20)+"px; left: "+(e.pageX - 20)+"px;")
-  })
-  document.addEventListener("click", function() {
-    document.getElementsByClassName("cursor").style.backgroundColor = "#ffffff";
-  })
-  </script>
 
 </body>
 
