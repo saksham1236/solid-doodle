@@ -1567,9 +1567,9 @@ section {
   -webkit-transition: -webkit-transform 0.5s;
   -moz-transition: -moz-transform 0.5s;
   transition: transform 0.5s;
-  -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
-  -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
-  transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.01, 0.78);
+  -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.01, 0.78);
+  transition-timing-function: cubic-bezier(0.82, 0.01, 0.01, 0.78);
 }
 
 .cd-nav .cd-primary-nav {
@@ -1977,6 +1977,15 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
 .blog_item h1, .blog_item h5 {
     transition: all 0.5s;
 }
+.blog_item h5{
+  font-family: "Inter", sans-serif;
+}
+@media(max-width:768px) {
+  .blog_item h1{
+    font-size:30px;
+  }
+}
+
 .blog_item .abs_bg {
     display: block;
     z-index: 1;
