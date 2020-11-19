@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
 	
 	//open/close lateral navigation
 	$('.cd-nav-trigger').on('click', function(event){
-		event.preventDefault();
+		
 		//stop if nav animation is running 
 		if( !isLateralNavAnimating ) {
 			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
 		}
   });
   $('.nav-menu a').on('click', function(event){
-		event.preventDefault();
+		
 		//stop if nav animation is running 
 		if( !isLateralNavAnimating ) {
 			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
