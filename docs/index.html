@@ -76,15 +76,15 @@
 </div> <!-- .cd-nav -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-left">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Saksham Tandon</h1>
-      <p>I'm a <span class="typed" data-typed-items="Designer, Illustrator, Freelancer, Artist"></span></p>
-    </div>
-  </section><!-- End Hero -->
+
 
   <main id="main" data-aos="fade-in" data-barba="container" data-barba-namespace="home">
-
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-left">
+      <div class="hero-container" data-aos="fade-in">
+        <h1>Saksham Tandon</h1>
+        <p>I'm a <span class="typed" data-typed-items="Designer, Illustrator, Freelancer, Artist"></span></p>
+      </div>
+    </section><!-- End Hero -->
     <!-- ======= work highlights ======= -->
     <section id="about" class="about">
         <div class="section-title container">
@@ -592,6 +592,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script>
     barba.init({
+      sync: true;
       transitions: [{
         name: 'opacity-transition',
         leave(data) {
