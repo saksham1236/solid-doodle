@@ -711,7 +711,19 @@ section {
   opacity: 1;
   bottom: 0;
 }
-
+.portfolio .card{
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3;
+}
+.portfolio .card:hover{
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3 ease-in;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+}
 .portfolio .card-title{
   color: #000;
   margin-bottom: 0px;
