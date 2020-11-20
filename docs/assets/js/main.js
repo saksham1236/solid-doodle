@@ -227,7 +227,7 @@ jQuery(document).ready(function($){
     var counter = 0;
     interval = setInterval(function(){
       $('.portfolio-container'). isotope('layout');
-      if (++counter == 200) {
+      if (++counter == 300) {
         clearInterval(interval);
       }
     }, 5);

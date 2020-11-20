@@ -718,11 +718,13 @@ section {
 }
 
 .portfolio .card-title i{
+  transition: 0.3s;
   padding-top: 3px;
 }
 
 .portfolio .card-text{
-  padding-top: 10px;
+  transition: 0.3s;
+  margin-top:10px;
 }
 
 /*--------------------------------------------------------------
