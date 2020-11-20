@@ -222,15 +222,22 @@ jQuery(document).ready(function($){
     $(document).ready(function() {
       $('.venobox').venobox();
     });
-  });
-  $( "#cled" ).click(function() {
-    var counter = 0;
+
     interval = setInterval(function(){
       $('.portfolio-container'). isotope('layout');
       if (++counter == 300) {
         clearInterval(interval);
       }
     }, 10);
+  });
+  $( "#cled" ).click(function() {
+    var counter = 0;
+    interval = setInterval(function(){
+      $('.portfolio-container'). isotope('layout');
+      if (++counter == 200) {
+        clearInterval(interval);
+      }
+    }, 5);
   });
   // var myFunction = function() {
   //   $('.portfolio-container').isotope('layout');
