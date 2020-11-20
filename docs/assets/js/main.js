@@ -232,6 +232,18 @@ jQuery(document).ready(function($){
       }
     }, 5);
   });
+
+  $(document).ready(function() {
+    var counter = 0;
+    interval = setInterval(function(){
+      $('.portfolio-container'). isotope('layout');
+      if (++counter == 300) {
+        clearInterval(interval);
+      }
+    }, 5);
+    console.log("document ready occurred!");
+  });
+  
   // var myFunction = function() {
   //   $('.portfolio-container').isotope('layout');
   // }
