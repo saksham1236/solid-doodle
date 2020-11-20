@@ -203,6 +203,7 @@ jQuery(document).ready(function($){
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
+    
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
       layoutMode: 'fitRows'
@@ -217,18 +218,25 @@ jQuery(document).ready(function($){
       });
       aos_init();
     });
-
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();
     });
   });
-
-  var myFunction = function() {
-    $('.portfolio-container').isotope('layout');
-  }
+  $( "#cled" ).click(function() {
+    var counter = 0;
+    interval = setInterval(function(){
+      $('.portfolio-container'). isotope('layout');
+      if (++counter == 300) {
+        clearInterval(interval);
+      }
+    }, 10);
+  });
+  // var myFunction = function() {
+  //   $('.portfolio-container').isotope('layout');
+  // }
   
-  var timer =  setInterval(myFunction, 50); 
+  // var timer =  setInterval(myFunction, 50); 
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
