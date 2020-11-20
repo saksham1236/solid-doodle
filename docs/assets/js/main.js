@@ -54,7 +54,7 @@ jQuery(document).ready(function($){
       backDelay: 2000
     });
   }
-
+  
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on('click', '.nav-menu a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -223,6 +223,12 @@ jQuery(document).ready(function($){
       $('.venobox').venobox();
     });
   });
+
+  var myFunction = function() {
+    $('.portfolio-container').isotope('layout');
+  }
+  
+  var timer =  setInterval(myFunction, 50); 
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({

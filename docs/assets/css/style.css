@@ -47,7 +47,9 @@ h1 {
 .rounded {
   border-radius: 15px !important;
 }
-
+.rounded-top{
+  border-radius: 15px 15px 0px 0px !important;
+}
 p {
   line-height: 1.7em;
 }
@@ -708,6 +710,15 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
+}
+
+.portfolio .card-title{
+  color: #000;
+  margin-bottom: 0px;
+}
+
+.portfolio .card-title i{
+  padding-top: 3px;
 }
 
 /*--------------------------------------------------------------
