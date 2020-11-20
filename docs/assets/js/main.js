@@ -222,13 +222,6 @@ jQuery(document).ready(function($){
     $(document).ready(function() {
       $('.venobox').venobox();
     });
-
-    interval = setInterval(function(){
-      $('.portfolio-container'). isotope('layout');
-      if (++counter == 300) {
-        clearInterval(interval);
-      }
-    }, 10);
   });
   $( "#cled" ).click(function() {
     var counter = 0;
