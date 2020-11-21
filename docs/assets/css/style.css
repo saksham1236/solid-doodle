@@ -57,6 +57,11 @@ p {
 object {
   pointer-events:none;
 }
+#yallo {
+  background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('../../assets/Projects/YoungFunds/Hero.jpg');
+  background-size: cover;
+  background-position-y: center;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1090,9 +1095,17 @@ section {
   }
 }
 .portmain{
-  padding-top: 90px;
+  padding:0px;
 }
-
+.portmain img{
+  padding-bottom: 30px;
+}
+.portmain h3{
+  padding-bottom: 20px;
+}
+.portmain .para{
+  padding-bottom: 20px;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1726,7 +1739,7 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     position: relative;
     transition: all 0.5s;
     cursor: pointer;
-    background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.6)),url("../../assets/img/portfolio-details-2.jpg");
+    background-position: center;
     background-size: cover;
     height: 450px;
     transition: 0.4s;
