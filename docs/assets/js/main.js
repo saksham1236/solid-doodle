@@ -224,26 +224,37 @@ jQuery(document).ready(function($){
     });
   });
   $( "#cled" ).click(function() {
+    var interval = 0;
     var counter = 0;
     interval = setInterval(function(){
       $('.portfolio-container'). isotope('layout');
-      if (++counter == 300) {
+      console.log(counter);
+      ++counter;
+      if (counter >= 100) {
         clearInterval(interval);
+        console.log('cleared');
       }
-    }, 5);
+    }, 100);
   });
-
-  $(document).ready(function() {
+  $(function() {
+    var interval;
+    clearInterval(interval);
     var counter = 0;
     interval = setInterval(function(){
       $('.portfolio-container'). isotope('layout');
-      if (++counter == 300) {
+      console.log(counter);
+      ++counter;
+      if (counter >= 100) {
         clearInterval(interval);
+        console.log('cleared');
       }
-    }, 5);
-    console.log("document ready occurred!");
+    }, 100);
   });
-  
+  // $(function() {
+  // var windowh;
+  // windowh = $(window).height();
+  //  $('.modal-body').css('min-height', windowh - 140 + 'px');
+  // })
   // var myFunction = function() {
   //   $('.portfolio-container').isotope('layout');
   // }
