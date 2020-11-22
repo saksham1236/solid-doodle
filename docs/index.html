@@ -35,7 +35,44 @@
  
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+		<script>
+			function setup(){
+				var canvas = createCanvas(windowWidth, windowHeight);
+        		canvas.parent('sketch-div');
+				textFont('Lexend Deca');
+				textAlign(RIGHT, TOP);
+				img = loadImage("hero1.png");
+			}
+			let img;
+			function preload() {
+  			
+			}
+			function draw(){
+				clear();
+				fill(255);
+				ellipse(mouseX, mouseY, 25, 25);
+				textAlign(RIGHT, TOP);
+				
+				if(windowWidth >= 768){
+					textSize(width/5);
+					text("Froto", width + width/60, -width/40);
+					fill(95, 255, 236);
+					text("Design", width + width/60, width/5 - width/40);
+				}
+				else {
+					textSize(width/3.17);
+					text("Froto", width + width/60, -width/30);
+					fill(95, 255, 236);
+					text("Design", width + width/60, width/3.5 - width/30);
+				}
+				
+			}
+			
+			function windowResized() {
+				resizeCanvas(windowWidth, windowHeight);
+			}
+		</script>
   <!-- =======================================================
   * Template Name: iPortfolio - v1.4.1
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -90,6 +127,7 @@
 
   <main id="main">
     <section id="hero" class="d-flex flex-column justify-content-center align-items-left">
+      <div class = "hero-background d-flex flex-column"><div id = "sketch-div"></div></div>
       <div class="hero-container" data-aos="fade-in">
         <h1>Saksham Tandon</h1>
         <p>I'm a <span class="typed" data-typed-items="Designer, Illustrator, Freelancer, Artist"></span></p>
