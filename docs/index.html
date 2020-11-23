@@ -48,6 +48,7 @@
 				textFont('Lexend Deca');
 				textAlign(RIGHT, TOP);
 				img = loadImage("hero1.png");
+        noStroke();
 			}
 			let img;
 			function preload() {
@@ -73,7 +74,8 @@
 				}
 				fill(255);
         blendMode(DIFFERENCE);
-				ellipse(mouseX, mouseY, 50, 50);
+				ellipse(mouseX, mouseY, 100, 100);
+        img(mouseX, mouseY);
 			}
 			
 			function windowResized() {
