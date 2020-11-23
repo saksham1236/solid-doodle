@@ -41,19 +41,15 @@
         var canvasDiv = document.getElementById('sketch-div');
         var width = canvasDiv.offsetWidth;
 				var canvas = createCanvas(width, windowHeight);
-        		canvas.parent('sketch-div');
-            var mouseSX;
-            var mouseSY;
-            var mouseS;
+        canvas.parent('sketch-div');
+        var mouseSX;
+        var mouseSY;
+        var mouseS;
 				textFont('Lexend Deca');
 				textAlign(RIGHT, TOP);
-				img = loadImage("hero1.png");
         noStroke();
-			}
-			let img;
-			function preload() {
-  			
-			}
+      }
+      
 			function draw(){
 				clear();
 				

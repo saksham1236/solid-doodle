@@ -273,7 +273,7 @@ object {
   color: #fff;
   padding-left: 30px;
   background-size: 100% 0.1em;
-background-position-x: 0%;
+  background-position-x: 0%;
 }
 .nav-menu .active:hover > a {
   text-decoration: none;
@@ -349,6 +349,7 @@ background-position-x: 0%;
   left: 0;
   right: 0;
   z-index: 1;
+  
 }
 
 #hero .hero-container {
@@ -362,12 +363,14 @@ background-position-x: 0%;
   font-size: 64px;
   line-height: 0.8em;
   color: #ffffff;
+  text-shadow: 5px 5px 10px #2A00FF;
 }
 
 #hero p {
   color: #ffffff;
   font-size: 26px;
   font-family: "Manrope", sans-serif;
+  text-shadow: 5px 5px 10px #2A00FF;
 }
 
 #hero p span {
