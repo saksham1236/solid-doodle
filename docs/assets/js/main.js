@@ -186,11 +186,6 @@ jQuery(document).ready(function($){
     return false;
   });
 
-  // jQuery counterUp
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
-  });
 
   // Skills section
   $('.skills-content').waypoint(function() {
@@ -223,33 +218,43 @@ jQuery(document).ready(function($){
       $('.venobox').venobox();
     });
   });
-  $( "#cled" ).click(function() {
-    var interval = 0;
-    var counter = 0;
-    interval = setInterval(function(){
-      $('.portfolio-container'). isotope('layout');
-      console.log(counter);
-      ++counter;
-      if (counter >= 100) {
-        clearInterval(interval);
-        console.log('cleared');
-      }
-    }, 100);
+  function epss() {
+    
+    };
+  $( ".collapsed" ).click(function() {
+    setTimeout(function(){ 
+      $('.portfolio-container').isotope('layout');
+     }, 300);
   });
-  $(function() {
-    var interval;
-    clearInterval(interval);
-    var counter = 0;
-    interval = setInterval(function(){
-      $('.portfolio-container'). isotope('layout');
-      console.log(counter);
-      ++counter;
-      if (counter >= 100) {
-        clearInterval(interval);
-        console.log('cleared');
-      }
-    }, 100);
-  });
+  // $( ".collapsed" ).click(function() {
+  //   var interval;
+    
+  //   var counter = 0;
+  //   clearInterval();
+  //   setInterval(function(){
+  //     $('.portfolio-container'). isotope('layout');
+  //     console.log(counter);
+  //     ++counter;
+  //     if (counter >= 100) {
+  //       clearInterval();
+  //       console.log('cleared');
+  //     }
+  //   }, 100);
+  // });
+  // $(document).one('load' , function() {
+  //   var interval;
+  //   clearInterval();
+  //   var counter = 0;
+  //  setInterval(function(){
+  //     $('.portfolio-container'). isotope('layout');
+  //     console.log(counter);
+  //     ++counter;
+  //     if (counter >= 100) {
+  //       clearInterval();
+  //       console.log('cleared');
+  //     }
+  //   }, 100);
+  // });
   // $(function() {
   // var windowh;
   // windowh = $(window).height();
