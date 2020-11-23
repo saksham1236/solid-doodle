@@ -166,6 +166,7 @@ jQuery(document).ready(function($){
       }
       if (cur_pos < 300) {
         $(".nav-menu ul:first li:first").addClass('active');
+        $('.portfolio-container').isotope('layout');
       }
     });
   });
