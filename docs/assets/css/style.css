@@ -792,6 +792,13 @@ section {
 }
 .modal .modal-title {
   color: #000 !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media(max-width:768px){
+  .modal .modal-title {
+    font-size: 18px;
+  }
 }
 /*--------------------------------------------------------------
 # Services
