@@ -760,11 +760,11 @@ section {
 .portfolio .card-text{
   transition: 0.3s;
 }
+
 .modal .modal-dialog{
   min-width: 90%;
   padding: 30px;
   margin-top: 90px;
-  
 }
 .modal-dialog{
   min-height: 87% !important;
@@ -1123,6 +1123,7 @@ section {
   padding:0px;
 }
 .portmain img{
+  width:100%;
   padding-bottom: 30px;
 }
 .portmain h3{

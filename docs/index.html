@@ -37,6 +37,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
 		<script>
+      
 			function setup(){
         var canvasDiv = document.getElementById('sketch-div');
         var width = canvasDiv.offsetWidth;
@@ -45,17 +46,17 @@
         var mouseSX;
         var mouseSY;
         var mouseS;
-				textFont('Lexend Deca');
+        textFont('Lexend Deca');
 				textAlign(RIGHT, TOP);
         noStroke();
       }
       
 			function draw(){
 				clear();
-				
 				textAlign(RIGHT, TOP);
-				blendMode(BLEND);
+        blendMode(BLEND);
 				if(windowWidth >= 768){
+          
 					textSize(width/5);
           fill(255);
 					text("Froto", width + width/60, -width/40);
@@ -133,7 +134,7 @@
 
   <main id="main">
     <section id="hero" class="d-flex flex-column justify-content-center align-items-left">
-      <div class = "hero-background d-flex flex-column container-fluid"><div id = "sketch-div"></div></div>
+      <div class = "hero-background d-flex flex-column container-fluid"><div id = "sketch-div" data-aos="fade-in"></div></div>
       <div class="hero-container" data-aos="fade-in">
         <h1>Saksham Tandon</h1>
         <p>I'm a <span class="typed" data-typed-items="Designer, Illustrator, Freelancer, Artist"></span></p>
@@ -296,7 +297,7 @@
           </div>
         </div>
 
-        <div id = "pop" class="row portfolio-container" data-aos="fade-up">
+        <div id = "popt" class="row portfolio-container" data-aos="fade-up">
 
       <!-- Card -->
       <div class = "col-lg-4 col-md-6 portfolio-item filter-web">
