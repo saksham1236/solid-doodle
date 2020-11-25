@@ -199,10 +199,6 @@ jQuery(document).ready(function($){
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
-    var portfolioIsotope = $('.skilled').isotope({
-      itemSelector: '.grid-item',
-      layoutMode: 'fitRows'
-    });
 
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
@@ -218,6 +214,15 @@ jQuery(document).ready(function($){
       });
       aos_init();
     });
+
+    var elem = document.querySelector('.skilled');
+    var pckry = new Packery( elem, {
+      // options
+      itemSelector: '.grid-item',
+      gutter: 10
+    });
+
+
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();

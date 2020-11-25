@@ -109,7 +109,7 @@ object {
   height:auto;
   left: 30px;
   top:  40px;
-  z-index: 9999;
+  z-index: 99;
 }
 
 .logo1{
@@ -540,18 +540,16 @@ section {
 .skills h1{
   margin-bottom: 30px;
 }
-.skills p{
-  margin-bottom: 10px;
-}
+
 .skilled {
   font-family: 'Lexend Deca', sans-serif;
   font-size: 36px;
-  line-height: 2.4em;
+  line-height: 2.17em;
 }
 @media(max-width:768px) {
   .skilled{
     font-size: 18px;
-    line-height: 3.6em;
+    line-height: 3.1em;
   }
 }
 .skilled a{
@@ -559,9 +557,15 @@ section {
   white-space: nowrap;
   border: 2px solid #fff;
   border-radius: 10px;
-  margin-right:8px;
 }
 
+.grid-item {
+  border-radius: 10px;
+  float: left;
+}
+.grid-item:hover{ 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
+}
 .skilled a:hover{
   color:#2A00FF !important;
   background-color: #fff;
@@ -795,10 +799,9 @@ section {
 .modal .modal-dialog{
   min-width: 90%;
   padding: 30px;
-  margin-top: 90px;
 }
 .modal-dialog{
-  min-height: 87% !important;
+  min-height: 94% !important;
   overflow: hidden;
 }
 
@@ -817,12 +820,12 @@ section {
 }
 @media(max-width:768px){
   .modal .modal-dialog{
-    min-height: 85%;
+    min-height: 98% !important;
     min-width: 90%;
     padding-left:0px;
     padding-right:0px;
     padding-bottom: 0px;
-    margin-top: 90px;
+    padding-top: 0px;
   }
   
 }
