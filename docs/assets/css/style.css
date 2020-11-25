@@ -537,6 +537,37 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+.skills h1{
+  margin-bottom: 30px;
+}
+.skills p{
+  margin-bottom: 10px;
+}
+.skilled {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 36px;
+  line-height: 2.4em;
+}
+@media(max-width:768px) {
+  .skilled{
+    font-size: 24px;
+    line-height: 3.0em;
+  }
+}
+.skilled a{
+  padding: 15px;
+  white-space: nowrap;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-right:8px;
+}
+
+.skilled a:hover{
+  color:#2A00FF !important;
+  background-color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
 .skills .progress {
   height: 50px;
   display: block;
@@ -781,7 +812,9 @@ section {
   width: 100%;
   height: 100%;
 }
-
+.portfolio {
+  padding:0px;
+}
 @media(max-width:768px){
   .modal .modal-dialog{
     min-height: 85%;
@@ -855,7 +888,48 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
+.contact h1{
+  padding-bottom: 30px;
+}
 
+.contact .contact-item {
+  background-color:#2A00FF;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+.contact .contact-item:hover a{
+  color: #2A00FF !important;
+}
+.contact-item{
+  border-radius: 10px;
+  border: 2px solid #fff;
+  padding: 20px;
+}
+
+.contact .contact-item:hover {
+  background-color: #fff;
+  color: #2A00FF !important;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+}
+.contact-item i{
+  font-size: 24px !important;
+  position: relative;
+  top: 4px;
+}
+
+.contact .contact-item a{
+  font-size: 18px !important;
+}
+.contact .contact-item p{
+  display: inline-block;
+  margin:0px;
+  padding-left: 20px;
+}
+.contact .col-lg-4{
+  margin-bottom:10px;
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1036,6 +1110,9 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+.portfolio h1 {
+  padding-bottom: 30px;
+}
 .portfolio-details {
   padding-top: 40px;
 }
@@ -1771,6 +1848,7 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     transition: 0.4s;
 }
 .blog_item h1, .blog_item h5 {
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
     transition: all 0.5s;
 }
 .blog_item h5{
