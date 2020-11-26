@@ -215,13 +215,19 @@ jQuery(document).ready(function($){
       aos_init();
     });
 
-    var elem = document.querySelector('.skilled');
+    var elem = document.querySelector('.servi');
     var pckry = new Packery( elem, {
       // options
       itemSelector: '.grid-item',
       gutter: 10
     });
 
+    var elem = document.querySelector('.skilled');
+    var pckry = new Packery( elem, {
+      // options
+      itemSelector: '.grid-item',
+      gutter: 10
+    });
 
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
