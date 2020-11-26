@@ -611,19 +611,24 @@ section {
 }
 .resume .resume-title {
   font-size: 36px;
-  padding-top:25px;
-  margin-bottom: 20px;
+  padding-top:15px;
+  margin-bottom: 30px;
+}
+.resume ul{
+  list-style: none;
+  
 }
 @media(max-width:768px){
   .resume .resume-title{
     padding-top:0px;
     font-size:24px;
+    margin-bottom: 10px;
   }
 }
 .resume .resume-item {
-  margin-top: 50px;
   padding: 0 0 0px 20px;
   border-left: 1px solid rgba(255, 255, 255, 0.5);
+  
   position: relative;
 }
 
@@ -645,11 +650,10 @@ section {
   .resume .resume-item {
     margin-top: 20px;
     padding: 0 0 0px 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
     position: relative;
   }
   .resume .resume-item h4{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 20px;
   }
   .resume .resume-item h5 {
@@ -660,7 +664,7 @@ section {
 }
 
 .resume .resume-item ul {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .resume .resume-item ul li {
