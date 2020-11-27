@@ -1252,27 +1252,7 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
-  padding: 15px;
-  color: #f4f6fd;
-  font-size: 14px;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: #000000;;
-}
 
-#footer .copyright {
-  text-align: center;
-}
-
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #eaebf0;
-}
 /* nav Styles */
 .cd-nav-trigger {
   position: fixed;
