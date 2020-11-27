@@ -676,6 +676,7 @@ section {
 }
 
 .skilled {
+  transition: 0.3s;
   font-family: 'Lexend Deca', sans-serif;
   font-size: 24px;
   line-height: 2.57em;
@@ -694,10 +695,12 @@ section {
 }
 
 .skilled .grid-item {
+  transition: 0.3s;
   border-radius: 10px;
   float: left;
 }
 .skilled .grid-item:hover{ 
+  transition: 0.3s;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
 }
 .skilled a:hover{
