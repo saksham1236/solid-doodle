@@ -53,7 +53,6 @@ h1 {
 p {
   line-height: 1.7em;
 }
-
 object {
   pointer-events:none;
 }
@@ -63,7 +62,7 @@ object {
   background-position-y: center;
 }
 #yallo1 {
-  background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('../../assets/img/portfolio-details-2.jpg');
+  background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('../../assets/Projects/Biophysical/Placement.jpg');
   background-size: cover;
   background-position-y: center;
 }
@@ -449,7 +448,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #00ffaa;
   bottom: 0;
   left: 0;
 }
@@ -832,15 +831,13 @@ section {
 .portfolio .card-text{
   transition: 0.3s;
 }
-
 .modal .modal-dialog{
   min-width: 90%;
-  padding: 30px;
-}
-.modal-dialog{
-  min-height: 94% !important;
+  padding-top: 30px;
+  min-height: 90%;
   overflow: hidden;
 }
+
 
 .modal .responsive-iframe {
   border: none;
@@ -1237,7 +1234,12 @@ section {
   }
 }
 .portmain{
+  background-color: #fff;
   padding:0px;
+  color: #000;
+}
+.portmain h2{
+  color:#000;
 }
 .portmain img{
   width:100%;
@@ -1245,6 +1247,7 @@ section {
 }
 .portmain h3{
   padding-bottom: 20px;
+  color: #000;
 }
 .portmain .para{
   padding-bottom: 20px;
@@ -1864,14 +1867,14 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     cursor: pointer;
     background-position: center;
     background-size: cover;
-    height: 450px;
+    height: 400px;
     transition: 0.4s;
 }
-.blog_item h1, .blog_item h5 {
+.blog_item h1, .blog_item h5, h6 {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
     transition: all 0.5s;
 }
-.blog_item h5{
+.blog_item h5, h6{
   font-family: "Inter", sans-serif;
 }
 @media(max-width:768px) {
