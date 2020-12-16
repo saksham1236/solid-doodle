@@ -1241,10 +1241,11 @@ section {
 .portmain h2{
   color:#000;
 }
-.portmain img{
+.portmain .img-fluid{
   width:100%;
   padding-bottom: 30px;
 }
+
 .portmain h3{
   padding-bottom: 20px;
   color: #000;
