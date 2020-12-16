@@ -1235,12 +1235,12 @@ section {
 }
 /*ko*/
 .portmain{
-  background-color: #fff;
+  background-color: #fff !important;
   padding:0px;
-  color: #000;
+  color: #000 !important;
 }
 .portmain h2{
-  color:#000;
+  color:#000 !important;
 }
 .portmain .img-fluid{
   width:100%;
@@ -1249,7 +1249,7 @@ section {
 
 .portmain h3{
   padding-bottom: 20px;
-  color: #000;
+  color: #000 !important;
 }
 .portmain .para{
   padding-bottom: 20px;
