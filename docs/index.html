@@ -181,7 +181,7 @@
                         
 
         <div id = "yallo1" class="blog_item full grey_bg">
-          <a class="full_link" data-toggle="modal" data-target="#ModYoung1" href="portfolio-details.html" target = "logframe"></a>
+          <a class="full_link" data-toggle="modal" data-target="#ModYoung1" href="biophysical.html"></a>
           <div class="abs_bg" id = "abs_bg" style="background-image: url('assets/Projects/Biophysical/Hero.jpg')"></div>
           <div class="blog_item_inner container">
               <h1>Biophysical Journal Cover</h1>
@@ -219,14 +219,37 @@
                        
 
         <div id = "yallo2" class="blog_item full grey_bg">
-          <a class="full_link" href="youngfunds.html"></a>
+          <a class="full_link" href="colorb.html" data-toggle="modal" data-target="#ModYoung2"></a>
           <div class="abs_bg" id = "abs_bg" style="background-image: url('assets/img/portfolio-details-1.jpg')"></div>
           <div class="blog_item_inner container">
-              <h1>Young Funds Website Redesign</h1>
-              <h5 class="date">blank </h5>
+              <h1>Color Blindness - Educational Animation</h1>
+              <h5>December, 2020</h5>
+              <h6>Saksham Tandon</h6>
           </div>
         </div>
-
+                        <!-- Full Height Modal Right -->
+                        <div class="modal fade bottom" id="ModYoung2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+        
+                        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+                        <div class="modal-dialog modal-top modal-dialog-scrollable" role="document">
+        
+        
+                          <div class="modal-content rounded">
+                            <div class="modal-header">
+                              <h4 class="modal-title w-100" id="myModalLabel">Biophysical Journal Cover</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                            <iframe class = "responsive-iframe" loading="lazy" src ="colorb.html" ></iframe>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Full Height Modal Right -->
 
 
           
@@ -442,13 +465,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
-<!-- JQuery -->
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+  <!-- JQuery -->
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <script>
+    var player;
+              function onYouTubePlayerAPIReady() {player = new YT.Player('player');}
+              //so on jquery event or whatever call the play or stop on the video.
+              //to play player.playVideo();
+              //to stop player.stopVideo();
+  </script>
 </body>
 
 </html>

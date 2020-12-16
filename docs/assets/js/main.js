@@ -242,6 +242,10 @@ jQuery(document).ready(function($){
       $('.portfolio-container').isotope('layout');
      }, 300);
   });
+  $('.modal').on('hidden.bs.modal', function () {
+      player.stopVideo();
+    });
+  });
   // $( ".collapsed" ).click(function() {
   //   var interval;
     
@@ -319,6 +323,7 @@ jQuery(document).ready(function($){
   $(window).on('load', function() {
     aos_init();
   })
+  
 
 })(jQuery);
 
