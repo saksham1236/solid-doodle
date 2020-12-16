@@ -245,7 +245,6 @@ jQuery(document).ready(function($){
   $('.modal').on('hidden.bs.modal', function () {
       player.stopVideo();
     });
-  });
   // $( ".collapsed" ).click(function() {
   //   var interval;
     
