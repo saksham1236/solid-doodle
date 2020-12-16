@@ -57,7 +57,7 @@ object {
   pointer-events:none;
 }
 #yallo {
-  background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('../../assets/Projects/YoungFunds/Hero.jpg');
+  background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('../../assets/Projects/MindGames/Hero.jpg');
   background-size: cover;
   background-position-y: center;
 }
@@ -422,7 +422,7 @@ object {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding-bottom: 60px;
   overflow: hidden;
 }
 
@@ -458,7 +458,17 @@ section {
   margin-bottom: 0;
 }
 
-
+.abt h3{
+  line-height: 1.7em;
+}
+.abt p{
+  font-size: 18px;
+  padding-top: 30px;
+}
+.abt a{
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -484,54 +494,6 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts {
-  padding-bottom: 30px;
-}
-
-.facts .count-box {
-  padding: 30px;
-  width: 100%;
-}
-
-.facts .count-box i {
-  display: block;
-  font-size: 44px;
-  color: #149ddd;
-  float: left;
-}
-
-.facts .count-box span {
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  color: #050d18;
-  margin-left: 60px;
-}
-
-.facts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #122f57;
-}
-
-.facts .count-box a {
-  display: block;
-  margin-top: 20px;
-  color: #122f57;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-.facts .count-box a:hover {
-  color: #1f5297;
 }
 
 /*--------------------------------------------------------------
