@@ -721,24 +721,27 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
-  border-radius: 50px;
+  background: #2A00FF;
   padding: 2px 15px;
 }
 
 .portfolio #portfolio-flters li {
+  border: 2px;
+  border-radius: 10px;
+  border-style: solid;
   display: inline-block;
   padding: 10px 15px 8px 15px;
-  font-size: 14px;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #272829;
+  font-size: 18px;
+  line-height: 1.7em;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #2a00ff;
+  background-color: #fff;
+  transition: 0.3s;
+  cursor:pointer;
 }
 
 .portfolio #portfolio-flters li:last-child {
