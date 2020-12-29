@@ -203,7 +203,9 @@ object {
     margin-left: 0;
   }
 }
-
+.para-top{
+  padding-top: 20px;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1202,8 +1204,9 @@ section {
 /*ko*/
 .portmain{
   background-color: #fff !important;
-  padding:0px;
   color: #000 !important;
+  padding:0px;
+  overflow-x: hidden;
 }
 .portmain h2{
   color:#000 !important;
@@ -1217,9 +1220,6 @@ section {
   padding-bottom: 20px;
   color: #000 !important;
 }
-.portmain .para{
-  padding-bottom: 20px;
-}
 .portmain .responsive-iframe {
   border: none;
   display: block;
@@ -1231,7 +1231,34 @@ section {
   height: 100vh;
   padding-bottom: 30px;
 }
-
+.portmain .row{
+  width: 100%;
+}
+.portmain .para-top{
+  padding-top:20px;
+}
+@media(max-width:992px){
+  .portmain .row{
+    width: auto;
+  }
+  .portmain .col-lg-4{
+    margin: 0px;
+  }
+}
+@media(max-width:576px){
+  .portmain .responsive-iframe {
+    border: none;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50vh;
+    padding-bottom: 30px;
+  }
+  
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
