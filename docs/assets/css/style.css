@@ -1214,7 +1214,17 @@ section {
   text-align: center;
   height:100vh;
 }
+@media(max-width:576px){
+  .portmain .imghero{
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height:auto;
+    width:100%;
+  }
 
+}
 .portmain h3{
   padding-bottom: 20px;
   color: #000 !important;
